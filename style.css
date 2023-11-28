@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(15, 238, 152);
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-size: cover;
+    position: relative;
+    perspective: 200px;
+}
+
+#img3::after
+{
+    display: block;
+    content: '';
+    background: rgb(4 48 30);
+    height:1500px;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#img1 {
+    transform: translateZ(-200px) scale(2);
+}
+
+#img2 {
+    transform: translateZ(-175px) scale(1.875);
+}
+
+#img3 {
+    top: 50px;
+    transform: translateZ(-50px) scale(1.25);
+}
+
+#img4 {
+    transform: translateZ(0);
+}
